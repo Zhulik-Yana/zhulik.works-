@@ -1,74 +1,74 @@
 # ╔══════════════════════════════════════════════════════════════════════╗
-# ║              GitVitae — Portfolio Configuration                      ║
-# ║  This is the only file you need to edit.                             ║
-# ║  Run  pnpm check-config  to catch mistakes before deploying.         ║
+# ║              GitVitae — Конфигурация портфолио                        ║
+# ║  Это единственный файл, который нужно редактировать.                 ║
+# ║  Запустите  pnpm check-config  чтобы проверить ошибки до публикации. ║
 # ╚══════════════════════════════════════════════════════════════════════╝
 
 # ╔══════════════════════════════════════════════════════════════════════╗
-# ║  ** FIRST THING TO CHANGE **                                         ║
+# ║  ** ПЕРВОЕ, ЧТО НУЖНО ИЗМЕНИТЬ **                                     ║
 # ║                                                                      ║
-# ║  siteMode: "landing"  → shows the GitVitae intro page (default)      ║
-# ║  siteMode: "portfolio" → shows YOUR portfolio                        ║
+# ║  siteMode: "landing"  → показывает вступительную страницу GitVitae   ║
+# ║  siteMode: "portfolio" → показывает ВАШЕ портфолио                   ║
 # ║                                                                      ║
-# ║  Change it to "portfolio" once you have filled in your details.      ║
+# ║  Измените на "portfolio", когда заполните свои данные.               ║
 # ╚══════════════════════════════════════════════════════════════════════╝
-siteMode: "landing"   # ← CHANGE THIS to "portfolio"
-siteUrl:  "https://yourusername.github.io"  # ← Your GitHub Pages URL (used for RSS & canonical links)
-showPoweredBy: false  # Set to true to show a small "Made with GitVitae" badge in your footer (helps others discover GitVitae)
+siteMode: "landing"   # ← ИЗМЕНИТЕ ЭТО на "portfolio"
+siteUrl:  "https://yourusername.github.io"  # ← Ваш URL на GitHub Pages (для RSS и канонических ссылок)
+showPoweredBy: false  # Поставьте true, чтобы показать значок "Made with GitVitae" в подвале
 
-# ── Identity ───────────────────────────────────────────── (required) ──
-name: "Git Vitae"              # Your name — shown in the header and used as a fallback in the avatar
+# ── Личные данные ─────────────────────────────────────── (обязательно) ──
+name: "Яна"              # Ваше имя — показывается в шапке и используется для аватара
 title: "Portfolio-Resume Engineer"
 tagline: "I build free portfolios and resumes for everyone."
 email: "git-vitae@proton.me"
-phone: ""                    # Optional — e.g. "+1 (555) 000-1234". Shown in contact section and resume.
-location: "San Francisco, CA"
-avatarUrl: "https://api.dicebear.com/9.x/fun-emoji/svg?seed=Alex&mouth[]=wideSmile&radius=12"  # Demo avatar — replace with your own photo URL (see instructions below)
-# How to add a profile photo (free, no extra account needed):
-#   1. Go to your GitHub repo → click "Add file" → "Upload files"
-#   2. Upload your photo (e.g. avatar.jpg) into a folder called "public/"
-#   3. After committing, open the file on GitHub and copy the raw URL:
-#      https://raw.githubusercontent.com/YOU/your-repo/main/public/avatar.jpg
-#   4. Paste that URL here.
-# Leave empty to show your initials as a styled placeholder.
+phone: ""                    # Необязательно — например, "+375 (29) 000-00-00". Показывается в контактах и резюме.
+location: "Беларусь"
+avatarUrl: "https://api.dicebear.com/9.x/fun-emoji/svg?seed=Alex&mouth[]=wideSmile&radius=12"  # Демо-аватар — замените на ссылку на своё фото (см. инструкцию ниже)
+# Как добавить своё фото (бесплатно, без лишних аккаунтов):
+#   1. Зайдите в свой репозиторий на GitHub → "Add file" → "Upload files"
+#   2. Загрузите фото (например, avatar.jpg) в папку "public/"
+#   3. После сохранения откройте файл на GitHub и скопируйте прямую ссылку (raw URL):
+#      https://raw.githubusercontent.com/ВАШ_НИК/ваш-репозиторий/main/public/avatar.jpg
+#   4. Вставьте эту ссылку сюда.
+# Оставьте пустым, чтобы показывались ваши инициалы.
 
-# ── Resume download ────────────────────────────────────────────────────
-# Optional: link directly to a hosted PDF (Google Drive, Dropbox, etc.)
-# If left blank the navbar "Resume" button opens the built-in resume page
-# where visitors can use "Save PDF" to print their own copy.
+# ── Скачивание резюме ──────────────────────────────────────────────────
+# Необязательно: прямая ссылка на PDF (Google Drive, Dropbox и т.д.)
+# Если оставить пустым, кнопка "Resume" откроет встроенную страницу резюме,
+# где посетители смогут нажать "Save PDF" и сохранить свою копию.
 #
-# How to get a direct download link:
-#   1. Visit /resume in your portfolio, click "Save PDF" -> save the file
-#   2. Upload that PDF to Google Drive / Dropbox and copy the direct link
-#   3. Paste the link below and update resumeFileName accordingly
+# Как получить прямую ссылку:
+#   1. Зайдите на /resume в своём портфолио, нажмите "Save PDF" → сохраните файл
+#   2. Загрузите этот PDF в Google Drive / Dropbox и скопируйте прямую ссылку
+#   3. Вставьте ссылку ниже и обновите resumeFileName
 #
-# resumeUrl: "https://drive.google.com/uc?export=download&id=YOUR_FILE_ID"
+# resumeUrl: "https://drive.google.com/uc?export=download&id=ВАШ_ID_ФАЙЛА"
 # resumeFileName: "Git_Vitae_Resume.pdf"
 
-# ── Status ─────────────────────────────────────────────────────────────
-openToWork: true         # Shows "Open to Opportunities" banner when true
+# ── Статус ─────────────────────────────────────────────────────────────
+openToWork: true         # Показывает баннер "Open to Opportunities", если true
 
-# ── Theme ──────────────────────────────────────────────────────────────
-defaultTheme: "system"   # Options: light | dark | system
-colorPreset: "indigo"    # Options: indigo | emerald | rose | amber | ocean | slate | custom
-# primaryColor: "#6366f1" # Optional — pick any colour you like and paste its hex code here.
-                           # Overrides colorPreset above. To find a hex code:
-                           #   → Google "colour picker", pick a colour, copy the 6-digit code (e.g. #e11d48)
-                           #   → or grab one from coolors.co / your favourite site's colour
+# ── Тема оформления ────────────────────────────────────────────────────
+defaultTheme: "system"   # Варианты: light | dark | system
+colorPreset: "indigo"    # Варианты: indigo | emerald | rose | amber | ocean | slate | custom
+# primaryColor: "#6366f1" # Необязательно — вставьте свой hex-код цвета.
+                           # Переопределяет colorPreset выше. Как найти hex-код:
+                           #   → Google "color picker", выберите цвет, скопируйте 6-значный код (например, #e11d48)
+                           #   → или возьмите на coolors.co / любимом сайте
 
 resumeTheme:
-  twoColumn: "indigo"    # Accent color for the two-column resume layout
-  classic: "emerald"     # Accent color for the classic resume layout
+  twoColumn: "indigo"    # Акцентный цвет для двухколоночного резюме
+  classic: "emerald"     # Акцентный цвет для классического резюме
 
-contactFormEndpoint: ""  # Optional — paste a Formspree URL (https://formspree.io/f/xxxx)
-                           # or any POST endpoint that accepts {name, email, message}.
-                           # Leave empty to use a pre-filled mailto: link instead.
+contactFormEndpoint: ""  # Необязательно — вставьте URL Formspree (https://formspree.io/f/xxxx)
+                           # или любой POST-эндпоинт, принимающий {name, email, message}.
+                           # Оставьте пустым, чтобы использовать mailto: ссылку.
 
-# ── Section visibility ─────────────────────────────────────────────────
-# Set show: false to hide any section from your portfolio
+# ── Видимость разделов ─────────────────────────────────────────────────
+# Поставьте show: false, чтобы скрыть любой раздел
 sections:
   - { id: about,          show: true  }
-  - { id: stats,          show: false }  # Stats already appear as cards in the About section above — enable this only if you want a dedicated full-width stats section
+  - { id: stats,          show: false }  # Статистика уже показывается карточками в разделе "О себе" — включите, только если хотите отдельный полноширинный блок
   - { id: skills,         show: true  }
   - { id: languages,      show: true  }
   - { id: experience,     show: true  }
@@ -79,46 +79,46 @@ sections:
   - { id: testimonials,   show: true  }
   - { id: contact,        show: true  }
 
-# ── Social links ───────────────────────────── (leave blank to hide) ───
+# ── Соцсети ──────────────────────────────────── (пусто = скрыто) ───────
 social:
   github:   "https://github.com/yourusername"
   linkedin: "https://linkedin.com/in/yourusername"
   twitter:  ""
   website:  ""
 
-# ── About ──────────────────────────────────────────────────────────────
-# Use | for multi-line text. Indent each line by 2 spaces.
+# ── О себе ─────────────────────────────────────────────────────────────
+# Используйте | для многострочного текста. Каждую строку с отступом в 2 пробела.
 about: |
-  I'm a portfolio-resume engineer with 5+ years of experience building products
-  that people love. I specialize in React, Node.js, and distributed systems.
-  When I'm not coding, I'm hiking trails or experimenting with new coffee
-  brewing methods.
+  Я — инженер портфолио и резюме с опытом более 5 лет, создаю продукты,
+  которые нравятся людям. Специализируюсь на React, Node.js и распределённых
+  системах. Когда не пишу код, гуляю по горным тропам или экспериментирую
+  с новыми способами заваривания кофе.
 
 
-# ── Stats ──────────────────────────────────────────────────────────────
-# Customise each label and value freely — change "Projects Shipped" to
-# "Active Customers", "Happy Clients", "Open Source Stars", etc.
-# Optional fields: prefix (e.g. "$") and suffix (e.g. "+" or "k").
-# Remove all entries or set show: false above to hide this section.
+# ── Статистика ─────────────────────────────────────────────────────────
+# Настройте каждую метку и значение — замените "Projects Shipped" на
+# "Активные клиенты", "Довольные клиенты", "Звёзды на GitHub" и т.д.
+# Необязательные поля: prefix (например, "$") и suffix (например, "+" или "k").
+# Удалите все записи или поставьте show: false выше, чтобы скрыть раздел.
 stats:
   - { label: "Years Experience", value: 5,    suffix: "+" }
   - { label: "Projects Shipped", value: 20,   suffix: "+" }
   - { label: "Happy Clients",    value: 50,   suffix: "+" }
   - { label: "Cups of Coffee",   value: 1200, suffix: ""  }
 
-# Examples of other combinations you can use:
+# Примеры других комбинаций:
 #   - { label: "Active Users",    value: 10000, suffix: "+" }
 #   - { label: "Revenue",         value: 2,     prefix: "$", suffix: "M+" }
 #   - { label: "Countries",       value: 12,    suffix: ""  }
 
-# ── Languages ──────────────────────────────────────────────────────────
-# level options: Native | Fluent | Conversational | Basic
+# ── Языки ──────────────────────────────────────────────────────────────
+# level: Native | Fluent | Conversational | Basic
 languages:
   - { name: "English",  level: "Native"        }
   - { name: "Spanish",  level: "Conversational" }
   - { name: "Mandarin", level: "Basic"          }
 
-# ── Skills ─────────────────────────────────────────────────────────────
+# ── Навыки ─────────────────────────────────────────────────────────────
 skills:
   - category: "Frontend"
     items: [React, TypeScript, Next.js, Tailwind CSS, Framer Motion]
@@ -129,7 +129,7 @@ skills:
   - category: "Tools"
     items: [Git, Figma, Jest, Storybook, Datadog]
 
-# ── Experience ─────────────────────────────────────────────────────────
+# ── Опыт работы ────────────────────────────────────────────────────────
 experience:
   - company: "Acme Corp"
     role: "Senior Full-Stack Engineer"
@@ -164,8 +164,8 @@ experience:
       - E-commerce
       - Internal tools
 
-# ── Projects ───────────────────────────────────────────────────────────
-# Set featured: true to show in the Featured section (max 3 recommended)
+# ── Проекты ────────────────────────────────────────────────────────────
+# Поставьте featured: true, чтобы показать в разделе "Избранное" (рекомендуется максимум 3)
 projects:
   - name: "OpenDesk"
     description: "An open-source project management tool built with React and Go. 2.3k GitHub stars. Real-time updates via WebSockets."
@@ -195,13 +195,13 @@ projects:
     repoUrl: "https://github.com/yourusername/logbook"
     featured: false
 
-# ── Education ──────────────────────────────────────────────────────────
+# ── Образование ────────────────────────────────────────────────────────
 education:
   - institution: "University of California, Berkeley"
     degree: "B.S. Computer Science"
     period: "2014 – 2018"
 
-# ── Certifications ─────────────────────────────────────────────────────
+# ── Сертификаты ────────────────────────────────────────────────────────
 certifications:
   - title: "AWS Certified Solutions Architect – Associate"
     issuer: "Amazon Web Services"
@@ -225,9 +225,9 @@ certifications:
     tags: [Data, GCP, BigQuery]
 
 
-# ── Publications ───────────────────────────────────────────────────────
-# Optional — ideal for researchers, academics, and technical writers.
-# type options: conference | journal | preprint | book-chapter | workshop
+# ── Публикации ─────────────────────────────────────────────────────────
+# Необязательно — идеально для исследователей, академиков и технических писателей.
+# type: conference | journal | preprint | book-chapter | workshop
 publications:
   - title: "Scaling Real-Time Collaboration in Distributed Systems"
     authors: "Rivera A, Chen L, Patel S"
@@ -245,17 +245,17 @@ publications:
     type: "journal"
     tags: [frontend, architecture, micro-frontends]
 
-# ── Testimonials ───────────────────────────────────────────────────────
+# ── Отзывы ─────────────────────────────────────────────────────────────
 testimonials:
   - name: "Sarah Chen"
     title: "Engineering Manager"
     company: "Acme Corp"
-    relationship: "Manager"   # e.g. Manager | Colleague | Client | Mentor
+    relationship: "Manager"   # например: Manager | Colleague | Client | Mentor
     quote: |
       Alex is one of the most thoughtful engineers I've had the pleasure of
       working with. They consistently delivered high-quality work on time and
       elevated the entire team's standards.
-    photoUrl: ""              # URL to headshot — leave empty for initials
+    photoUrl: ""              # Ссылка на фото — оставьте пустым для инициалов
 
   - name: "James Okafor"
     title: "Senior Product Designer"
@@ -277,33 +277,33 @@ testimonials:
       genuinely invested in our success.
     photoUrl: ""
 
-# ── Analytics (optional, always free) ──────────────────────────────────────
-# Two ways to track who visits your portfolio — both free, no credit card:
+# ── Аналитика (необязательно, всегда бесплатно) ─────────────────────────
+# Два способа отслеживать посетителей — оба бесплатны, без карты:
 #
-# 1. GitHub built-in traffic (zero setup — already there!)
-#    Go to your repository → Insights → Traffic.
-#    Shows unique visitors, page views, and top referrers for the last 14 days.
+# 1. Встроенная статистика GitHub (без настройки — уже там!)
+#    Зайдите в репозиторий → Insights → Traffic.
+#    Показывает уникальных посетителей, просмотры и источники за 14 дней.
 #
-# 2. GoatCounter (more detail, privacy-friendly, free forever for personal use)
-#    Sign up at https://www.goatcounter.com — you'll get a short code, e.g. "janedoe"
-#    Uncomment the two lines below and replace "yourcode" with your GoatCounter code:
+# 2. GoatCounter (больше деталей, приватный, бесплатный для личного использования)
+#    Зарегистрируйтесь на https://www.goatcounter.com — получите короткий код, например "janedoe"
+#    Раскомментируйте две строки ниже и замените "yourcode" на свой код GoatCounter:
 #
 # analytics:
 #   goatcounterCode: "yourcode"
 
-# ── Blog ─────────────────────────────────────────────────────────────────────
-# Drop any .md file into the blog/ folder — it becomes a post automatically.
-# Each post starts with a small block called "frontmatter" (between --- lines):
+# ── Блог ───────────────────────────────────────────────────────────────
+# Положите любой .md файл в папку blog/ — он автоматически станет постом.
+# Каждый пост начинается с блока "frontmatter" (между ---):
 #
 #   ---
-#   title: "My Post Title"
+#   title: "Название поста"
 #   date: "2025-01-15"
-#   tags: [life, tech]
-#   excerpt: "One sentence that appears on the listing page."
+#   tags: [жизнь, технологии]
+#   excerpt: "Одно предложение для страницы со списком."
 #   ---
 #
-# Then write your post in plain Markdown below the closing ---.
-# See the sample posts in blog/ to get started.
+# Затем пишите пост на чистом Markdown ниже закрывающих ---.
+# Смотрите примеры постов в папке blog/ для начала.
 blog:
   enabled: true
   title: "Blog"
